@@ -3,17 +3,18 @@ import Card from "./components/Card/Card.jsx";
 import "./App.css";
 
 // Lists
+// I have no explanation 
 const nameList = [
   "John", "Jane", "Sam", "Emily",
   "Alex", "Chris", "Katie", "Mark",
-  "Sarah", "Beta", "Sigma", "Dumbass",
+  "Sarah", "Beta", "Sigma",
   "Shithead", "Smith", "Williams", "Jones", 
   "Brown", "Taylor", "Thomas", "Jackson", 
-  "White", "Fuckface", "Gaylord", "Harris",
-  "Johnson", "Dick", "Johnny", "Sins", "Bartholemew", "Jamael",
-  "Daqueef", "Smeralda"
+  "White", "Harris",
+  "Johnson", "Dick", "Johnny", "Sins", "Bartholemew",
 ];
 
+// We used the most accurate mock data that people generally use online.
 const descriptionList = [
   "lobotomized", "Shows aggression towards women", "A frequent member of the KKK",
   "loves children", "has children", "gay and circumcised", "doesn't love lesbians",
