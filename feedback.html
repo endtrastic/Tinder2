@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Tuah</title>
+    <!-- Font Awesome and Google Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong" />
+    <link rel="stylesheet" href="navbar.css"/>
+    <style>
+        a.active,
+        a:hover {
+            background: #9d3232;
+            transition: 0.3s ease;
+        }
+
+        /* Responsive Navbar */
+        #check {
+            display: none;
+        }
+
+        @media (max-width: 890px) {
+            .checkbtn {
+                display: block;
+            }
+
+            nav ul {
+                position: fixed;
+                width: 100%;
+                height: 100vh;
+                background: #9d3232;
+                top: 80px;
+                left: -100%;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                transition: all 0.3s ease;
+            }
+
+            nav ul li {
+                margin: 20px 0;
+            }
+
+            #check:checked ~ ul {
+                left: 0;
+            }
+        }
+
+        /* Feedback Form Styling */
+        .container-2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+             /* To account for fixed navbar */
+        }
+
+        .card {
+            background-color: #ffa9a9;
+            border: 1px solid #000;
+            border-radius: 8px;
+            width: 500px;
+            padding: 20px;
+        }
+
+        .card p {
+            color: #333;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        form {
+            background: #fff;
+            padding: 20px;
+            width: 100%;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        form textarea {
+            width: 100%;
+            height: 120px;
+            resize: none;
+            border: 1px solid #999;
+            border-radius: 4px;
+            padding: 10px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+
+        form button {
+            background: #9d3232;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        form button:hover {
+            background: #fff;
+        }
+
+        /* Social Icons Section (Optional) */
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-icons i {
+            font-size: 24px;
+            color: #fff;
+            background: #9d3232;
+            padding: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .social-icons i:hover {
+            background: #6a1b1b;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <label class="logo">Tinder Tuah Feedback</label>
+        <input type="checkbox" id="check" />
+        <label class="checkbtn" for="check">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a class="active" href="#">Feedback</a></li>
+        </ul>
+    </nav>
+
+    <div class="container-2">
+        <div class="card">
+            <p>You may leave a comment about us, and we may consider reading it!</p>
+            <form method="post" action="#">
+                <textarea name="comment" placeholder="Write here dumbass"></textarea>
+                <button type="submit">Publish Feedback</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

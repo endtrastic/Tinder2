@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tinder Tuah - About Us</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <!-- External Stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong" /> 
+    <link rel="stylesheet" href="navbar.css" />
+    <style>
+      /* General Styles */
+      body {
+        font-family: "Audiowide", sans-serif;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        background-color: #fdf5f5; /* Light background for contrast */
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 40px 20px;
+        flex-grow: 1; /* Pushes the footer to the bottom when content is short */
+      }
+
+      .about-section {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+
+      .about-section h1 {
+        font-family: "Audiowide", sans-serif;
+        color: #333;
+        font-size: 2.5rem;
+      }
+
+      .team-section h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #333;
+        font-size: 2rem;
+      }
+
+      .team {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+
+      .team-card {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        width: 250px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .team-card:hover {
+        transform: scale(1.1); /* Scale effect on hover */
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+      }
+
+      .team-card img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+      }
+
+      .team-card h3 {
+        font-size: 1.2rem;
+        margin: 10px 0;
+      }
+
+      .team-card p {
+        font-size: 0.9rem;
+        color: #666;
+      }
+
+      footer {
+        text-align: center;
+        padding: 20px 0;
+        background-color: #ffa9a9;
+        color: #fff;
+      }
+
+      #check {
+            display: none;
+            color: white;
+      }
+
+      .checkbtn i {
+          color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <label class="logo">About Tinder Tuah</label>
+      <input type="checkbox" id="check" />
+      <label class="checkbtn" for="check">
+          <i class="fas fa-bars"></i>
+      </label>
+      <ul>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="/">Home</a></li>
+        <li><a class="active" href="#">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+      </ul>
+    </nav>
+
+    <!-- About Section -->
+    <div class="container">
+      <section class="about-section">
+        <h1>We love everyone!</h1>
+        <p>
+          "Tinder Tuah" or more formally known as "Turbo Virgin Tinder Tuah" is our solution to people being single or in an unhappy relationship. We pride ourselves on having a diverse and lovely team of three people and even more on how diverse our customers are. There are the blacks, Asians, albinos, Mexicans, and even normal people.
+        </p>
+        <p>
+          We care about human and non-human (we have aliens) connections and wish for our website to give everyone a chance to find someone.
+        </p>
+      </section>
+
+      <!-- Team Section -->
+      <section class="team-section">
+        <div class="team">
+          <div class="team-card">
+            <img src="src/assets/images/OurImages/OtokarSefer.png" alt="Team Member 1" />
+            <h3>Otokar Sefer</h3>
+            <p>Was here when it was made</p>
+          </div>
+          <div class="team-card">
+            <img src="src/assets/images/OurImages/Aramando.png" alt="Team Member 2" />
+            <h3>Armando Aleksander Tuvikene</h3>
+            <p>Random Indian dude</p>
+          </div>
+          <div class="team-card">
+            <img src="src/assets/images/OurImages/Gooner.png" alt="Team Member 3" />
+            <h3>Gooner Mcdumbass Backshots</h3>
+            <p>Cuck</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2056 Tinder Tuah. No rights reserved.</p>
+    </footer>
+  </body>
+</html>

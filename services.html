@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services Tuah</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong" />
+    <link rel="stylesheet" href="navbar.css" />
+    <style>
+        a.active,
+        a:hover {
+            background: #9d3232;
+            transition: 0.3s ease;
+        }
+
+        /* Responsive Navbar */
+        #check {
+            display: none;
+            color: white;
+        }
+
+        .checkbtn i {
+            color: white;
+        }
+
+        @media (max-width: 890px) {
+            .checkbtn {
+                display: block;
+            }
+
+            nav ul {
+                position: fixed;
+                width: 100%;
+                height: 100vh;
+                background: #9d3232;
+                top: 80px;
+                left: -100%;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                transition: all 0.3s ease;
+            }
+
+            nav ul li {
+                margin: 20px 0;
+            }
+
+            #check:checked ~ ul {
+                left: 0;
+            }
+        }
+
+        .container-2 {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            min-height: 100vh;
+            margin-top: 0px;
+            padding: 120px;
+        }
+
+        .service-card {
+            background-color: #ffa9a9;
+            border: 1px solid #000;
+            border-radius: 8px;
+            width: 30%;
+            height: flex;
+            padding: 20px;
+            margin: 15px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .service-card h3 {
+            color: #333;
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .service-card p {
+            color: #333;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .service-card i {
+            font-size: 50px;
+            color: #fff;
+            background: #9d3232;
+            padding: 15px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            transition: background 0.3s ease;
+        }
+
+        .service-card i:hover {
+            background: #6a1b1b;
+        }
+
+        .button {
+            background: #9d3232;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .button:hover {
+            background: #6a1b1b;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <label class="logo">Tinder Tuah Services</label>
+        <input type="checkbox" id="check" />
+        <label class="checkbtn" for="check">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a class="active" href="#">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container-2">
+        <!-- Service 1 -->
+        <div class="service-card">
+            <i class="fas fa-cogs"></i>
+            <h3>Dating advice</h3>
+            <p>We will help you learn to talk to others as we already know you get no bitches cause your reading this shit.</p>
+            <button class="button">Send us a message</button>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card">
+            <i class="fas fa-briefcase"></i>
+            <h3>Help with your love life</h3>
+            <p>Pay us 5 bucks and we will give you 50 extra accounts to maybe get you a date you ugly fuck. Well also remove you profile image for safety
+            </p>
+            <button class="button">PAY</button>
+        </div>
+    </div>
+</body>
+</html>

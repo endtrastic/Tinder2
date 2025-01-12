@@ -1,0 +1,47 @@
+.card {
+  position: relative;
+  /* Ensure the card is positioned correctly, don't let hearts affect it */
+}
+
+.hearts-container {
+  position: fixed; /* Fix hearts relative to the viewport, not the card */
+  top: 0; /* Place them at the top of the screen */
+  left: 0;
+  width: 100vw; /* Full width of the screen */
+  height: 100vh; /* Full height of the screen */
+  pointer-events: none; /* Prevent hearts from interfering with interactions */
+}
+
+.heart-animation {
+  position: absolute;
+  font-size: 2rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.paddingForButton {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.like {
+  background-color: #ff4b5c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.reject {
+  background-color: #bbb;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}

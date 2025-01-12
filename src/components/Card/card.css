@@ -1,0 +1,107 @@
+.card {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    background-color: #fff;
+  }
+  
+  .profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+  
+  .generate-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #ffa9a9;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .generate-btn:hover {
+    background-color: #ff7b7b;
+  }
+  
+  .profile-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover; /* Ensures the image doesn't get distorted */
+    border-radius: 50%;
+  }
+  
+  .paddingForButton {
+    display: flex;
+    justify-content: space-between; /* Places buttons side by side with space */
+    gap: 10px; /* Adds spacing between buttons */
+    padding-top: 20px;
+  }
+  
+  .button {
+    background: #9d3232;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    flex: 1; /* Ensures buttons are of equal size */
+    max-width: 150px; /* Optional: set a max width */
+  }
+  
+  .button:hover {
+    background: #802323;
+  }
+  
+  .button.like {
+    background: #32a852; /* Green for Like */
+  }
+  
+  .button.like:hover {
+    background: #287a3f; /* Darker green for hover */
+  }
+  
+  .button.reject {
+    background: #d9534f; /* Red for Reject */
+  }
+  
+  .button.reject:hover {
+    background: #b52e2a; /* Darker red for hover */
+  }
+  
+  .liked-profiles {
+    margin-top: 30px;
+    text-align: left;
+  }
+  
+  .liked-profiles h4 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .liked-profile-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .liked-profile-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+  
+  .liked-profile-item p {
+    margin: 0;
+  }
+  
